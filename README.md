@@ -3,7 +3,7 @@
   <img 
     src="https://opensource.google/static/images/projects/os-projects-go.svg" 
     alt="Go Self Learning" 
-    style="width:50%; max-width:50%; height:auto; border-radius:8px;" 
+    style="width:50%; max-width:50%; height:auto; border-radius:9px;" 
   />
 </div>
 
