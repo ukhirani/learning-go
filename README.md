@@ -18,7 +18,7 @@ This repository documents my self-learning journey with the Go programming langu
 The repo is organized with:
 
 * ✅ **Coding Implementation of the topics**
-* 📝 **Personal notes (Obsidian Vault**
+* 📝 **Personal notes (Obsidian Vault)**
 
 
 Feel free to explore the repo if you're also learning Go — contributions or suggestions are always welcome!
