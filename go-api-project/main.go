@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/melkeydev/femProject/internal/app"
+	"github.com/melkeydev/femProject/internal/routes"
 )
 
 func main() {
@@ -17,9 +18,10 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	http.HandleFunc("/health", HealthCheck)
+	r := routes.SetupRoutes(app)
 	server := &http.Server{
 		Addr:         fmt.Sprintf(":%d", port),
+		Handler:      r,
 		IdleTimeout:  time.Minute,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 30 * time.Second,
@@ -30,9 +32,4 @@ func main() {
 	if err != nil {
 		app.Logger.Fatal(err)
 	}
-}
-
-// Additionally, the http.Request struct is large, so passing it by pointer is more efficient. Handlers and middleware may want to modify the request and those changes should persist for the full life of the request.
-func HealthCheck(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Status is available \n")
 }

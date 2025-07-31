@@ -2,7 +2,9 @@
 package app
 
 import (
+	"fmt"
 	"log"
+	"net/http"
 	"os"
 )
 
@@ -16,4 +18,9 @@ func NewApplication() (*Application, error) {
 		Logger: logger,
 	}
 	return app, nil
+}
+
+// Additionally, the http.Request struct is large, so passing it by pointer is more efficient. Handlers and middleware may want to modify the request and those changes should persist for the full life of the request.
+func (a *Application) HealthCheck(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "Status is available \n")
 }
