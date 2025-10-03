@@ -8,4 +8,9 @@ func main() {
 	fmt.Println("Hello, World")
 	// This illustrates the international character of Go by printing Καλημέρα κόσμε; or こんにちは 世界.
 	fmt.Printf("Καλημέρα κόσμε; or こんにちは 世界\n")
+	printMessage("Hello there from another functionn")
+}
+
+func printMessage(hello string) {
+	fmt.Println(hello)
 }
