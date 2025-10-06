@@ -1,4 +1,4 @@
-package main
+// package main
 
 import "fmt"
 
@@ -9,6 +9,7 @@ func main() {
 	// This illustrates the international character of Go by printing Καλημέρα κόσμε; or こんにちは 世界.
 	fmt.Printf("Καλημέρα κόσμε; or こんにちは 世界\n")
 	printMessage("Hello there from another functionn")
+	fmt.Print("hello")
 }
 
 func printMessage(hello string) {

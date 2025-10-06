@@ -1,4 +1,4 @@
-package main
+// package hello
 
 // if you give the main function return type and also no parameters in the argument is allowed
 // func main must have no arguments and no return values
