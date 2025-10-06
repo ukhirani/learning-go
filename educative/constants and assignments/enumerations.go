@@ -1,4 +1,4 @@
-// package main
+package main
 
 func main() {
 	// Listing of all elements of a set is called enumeration. Constants can be used for enumerations.
