@@ -3,13 +3,12 @@ package main
 import "fmt"
 
 func main() {
-
-	//A value that can be changed by a program during execution is called a variable
+	// A value that can be changed by a program during execution is called a variable
 
 	// var identifier type
 	// As discussed earlier in this chapter, type is written after the identifier of the variable, contrary to most older programming languages.
 
-	//When a variable is declared, memory in Go is initialized, which means it contains the default zero or null value depending upon its type automatically.
+	// When a variable is declared, memory in Go is initialized, which means it contains the default zero or null value depending upon its type automatically.
 
 	var num int      // Declaring  an integer variable
 	fmt.Println(num) // Printing its value
@@ -23,6 +22,7 @@ func main() {
 	// 0
 	// false
 
-	// Remark: The naming of identifiers for variables follows the camelCasing rules (start with a small letter, and every new part of the word starts with a capital letter). But if the variable has to be exported, it must start with a capital letter, as discussed earlier in this chapter.
+	fmt.Println("wohoo")
 
+	// Remark: The naming of identifiers for variables follows the camelCasing rules (start with a small letter, and every new part of the word starts with a capital letter). But if the variable has to be exported, it must start with a capital letter, as discussed earlier in this chapter.
 }
