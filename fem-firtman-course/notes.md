@@ -1,0 +1,5 @@
+- every new version of go is fully backwards compatible
+- it has a lot of c based syntax
+- go has a static type system
+- Go creates a single binary executable during compilation, which means the output is one file that can run directly, without relying on external dynamic libraries (DLLs) or complex linking processes.
+- go supports multiparadigm programming support
