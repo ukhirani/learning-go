@@ -34,7 +34,7 @@ func main() {
 
 	//---------------------COMPILATION-----------------------------
 
-	const C1 = 2 / 3       // okay
+	const C1 = 2 / 4       // okay
 	const C2 = getNumber() // not okay (can you see the red squiggle)
 
 	// WHY ????
