@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// strings are immuatbel in go and are of value type thus cannot be modified once declared
+	// strings are immuatble in go and are of value type thus cannot be modified once declared
 	hello := "string\n"      // this is an interpreted string
 	hello_raw := `string \n` // this is a raw string and hence will also display /n
 	fmt.Println(hello, hello_raw)
